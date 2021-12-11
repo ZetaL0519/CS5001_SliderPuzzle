@@ -1,0 +1,55 @@
+"""
+Siyue Li
+2021 Fall
+CS 5001
+Project Slide puzzle
+"""
+***
+Design:
+The game is consisted of four main parts:
+1. The display screen and user input
+2. The game itself, including displaying slides, moving and recording
+3. The buttons, and its interaction with the game
+4. leaderboard, including reading, displaying and updating
+
+For the first part, there are DrawRectangle.py and Board.py
+For the second part, there are Slide.py, SlideGame.py, ValidationService.py
+For the third part, there are ButtonService.py
+For the fourth part, there are LeaderBoard.py, TextRectangle.py, ValidationService.py
+
+***
+Files:
+1. DrawRectangle.py
+This helper file is about drawing area rectangle on the board. 
+
+2. TextRectangle.py
+This helper file is about writing text on leaderboard and player move status board.
+
+3. Leaderboard.py
+This helper file is about displaying, reading, writing and updating leaderboard.
+
+4. Slide.py
+This helper file is about drawing, removing slides and identifying slides. Each slide is an object from class Slide.
+
+5. Board.py
+This helper file is about the first few displays in the game, including splash screen, user input, game, leader board and button areas.
+
+6. ButtonService.py
+This helper file is about drawing and hitting three buttons(quit, load, reset) on the bottom right.
+
+7. ValidationService.py
+This helper file is about validating directory files, leaderboard files and images.
+
+8. SlideGame.py
+This is the main game design file. This file controls the process of the whole game.
+
+9. puzzle_game.py
+This is the game driver file.
+
+*** Future Improvement
+1. If the user clicks on the board before the last move finishes, it will stuck. So the future improvement should be
+that if the user click on the board too quick, it will not affect the process.
+
+2. The err file is not perfect. Need improvement in the future.
+
+3. Sometimes when the user hits load button , the empty slide square is not removed. Haven't figured out why.
